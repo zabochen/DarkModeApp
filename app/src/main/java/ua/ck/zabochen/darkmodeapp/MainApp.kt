@@ -7,7 +7,12 @@ class MainApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        setNightMode()
+        setSystemNightMode()
+        //setNightMode()
+    }
+
+    private fun setSystemNightMode() {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
     }
 
     private fun setNightMode() {
